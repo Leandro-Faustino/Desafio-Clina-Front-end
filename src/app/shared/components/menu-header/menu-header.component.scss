@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+}
+.logo {
+  width: 134px;
+  height: 40px;
+  margin: 0 40px 0 7.39%;
+}
+.group1 {
+  width: 157px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.relogio {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  padding-right: 3px;
+}
+.salas {
+  flex-wrap: nowrap;
+  width: 87.26%;
+  height: 23px;
+  text-align: left;
+  font: normal normal normal 16px/28px Poppins;
+  letter-spacing: 0px;
+  color: #7a35ff;
+  opacity: 1;
+}
+.arvore {
+  display: flex;
+  width: 58px;
+  height: 36px;
+  opacity: 1;
+  align-items: center;
+  position: absolute;
+  right:7.46%
+}
+.buttonMenu {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-style: none;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.iconPerson {
+  color: gray;
+  opacity: 1;
+}
+
+.configMenu {
+  width: 174px;
+  height: 132px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px #00000014;
+  border-radius: 0px 0px 4px 4px;
+  opacity: 1;
+}
+.iconsPersonMenu {
+  opacity: 1;
+  width: 15px;
+  height: 16px;
+  color: #7a35ff;
+  margin: 10px;
+}
+.group2 {
+  border-bottom: 1px solid rgb(252, 244, 244);
+}
+.icon-list {
+  color: #7a35ff;
+}
+.group3 {
+  width: 174px;
+  height: 45px;
+  background-color: #eeeeee;
+}
+.noline {
+  text-decoration: none;
+  width: 36px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #4f4f4f;
+  opacity: 1;
+
+
+}

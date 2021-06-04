@@ -1,0 +1,177 @@
+.container-principal {
+  width: 100%;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 34.26%;
+  height: 593px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 89.74%;
+  height: 497px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px #00000014;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+
+svg {
+  position: relative;
+  right: 28.09%;
+  width: 38.333%;
+  height: 48px;
+  margin: 48px 0 32px 24px;
+}
+
+form {
+  width: 88.75%;
+  margin: 0 24px 36px 24px;
+}
+
+.benVindo {
+  width: 68.28%;
+  height: 33px;
+  text-align: left;
+  font: normal normal bold 24px/28px Poppins;
+  letter-spacing: 0px;
+  color: #111111;
+  opacity: 1;
+}
+.InputGroupEmail {
+  display: flex;
+  width: 88.75%;
+  height: 73px;
+  margin: 8px 0 16px 0;
+}
+
+.emailLabel {
+  width: 43.01%;
+  height: 23px;
+  text-align: left;
+  font: normal normal 600 16px/28px Poppins;
+  letter-spacing: 0px;
+  color: #4f4f4f;
+  opacity: 1;
+  margin-bottom: 6px;
+}
+
+.input1 {
+  width: 100%;
+  height: 44px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  opacity: 1;
+  margin-bottom: 16px;
+}
+::placeholder {
+  margin-left: 12px;
+  padding: 12px;
+  width: 120px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #aaaaaa;
+  opacity: 1;
+}
+.inputGroupSenha {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 73px;
+  margin: 8px 0 16px 0;
+}
+.senhaLabel {
+  width: 33.97%;
+  height: 23px;
+  text-align: left;
+  font: normal normal 600 16px/28px Poppins;
+  letter-spacing: 0px;
+  color: #4f4f4f;
+  opacity: 1;
+  margin-bottom: 8px;
+}
+.input2 {
+  width: 100%;
+  height: 44px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  opacity: 1;
+  background: transparent url(../../assets/Iconfeather-eye-off.png) 98% 50%
+    no-repeat padding-box;
+}
+button {
+  width: 100%;
+  height: 44px;
+  background: #7a35ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 8px #0000001f;
+  margin-top: 16px;
+  border-radius: 4px;
+  opacity: 1;
+  border-style: none;
+  cursor: pointer;
+}
+
+.titleButtom {
+  width: 50px;
+  height: 23px;
+  text-align: left;
+  font: normal normal bold 16px/26px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+.textlink1 {
+  justify-content: center;
+  width: 36.19%;
+  height: 20px;
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal 600 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #212e89;
+  opacity: 1;
+}
+
+.groupCadastro {
+  width: 100%;
+}
+
+.cadastro {
+  width: 148px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #4f4f4f;
+  opacity: 1;
+  margin-right: 7px;
+}
+.textAncora {
+  width: 92px;
+  height: 20px;
+  text-align: center;
+  font: normal normal 600 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #212e89;
+  opacity: 1;
+  text-decoration: none;
+}

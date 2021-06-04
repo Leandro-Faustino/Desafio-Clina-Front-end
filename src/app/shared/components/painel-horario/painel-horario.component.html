@@ -1,0 +1,128 @@
+<div class="container">
+<div class="containerHorario">
+<div class="group1">
+<button class="buttonVoltar" aria-label="botao de voltar">
+  <mat-icon class="seta">chevron_left</mat-icon>
+</button>
+<h2 class="pGroup1">Horários disponíveis para escolher</h2>
+</div>
+<div class="group2">
+  <div class="group3">
+    <span class="paragrafo1">Dias(s) escolhido(s)</span>
+    <Input class="input1" placeholder="De 02 de mar. a 05 de mar." type="date" />
+    </div>
+    <div class="group4">
+    <p class="p2">Período do dia</p>
+    <select class="input2" name="select">
+      <option value="valor1">Todos</option>
+      <option value="valor2" selected>Manhã</option>
+      <option value="valor3">Tarde</option>
+      <option value="valor4">noite</option>
+    </select>
+    </div>
+    </div>
+<div class="group5">
+  <div class="group6">
+    <span class="spanGroup6">02</span>
+    <p class="pGroup6">março</p>
+  </div>
+  <div class="group8">
+<div class="group7">
+<span class="span1Group7">No período da - </span>
+<span class="span2Group7">Manhã</span>
+</div>
+<div class="groupHorarios">
+<div>
+  <button class="horasGroup9" (click)="show()">
+    <span class="spanGroup9">10 as 15:04</span>
+  </button>
+</div>
+<div>
+  <button class="horasGroup9" (click)="show()">
+    <span class="spanGroup9">10 as 15:04</span>
+  </button>
+</div>
+</div>
+  </div>
+    </div>
+
+<!-- ////////////////////////////// dados dinamico-->
+<div class="group5">
+  <div class="group6">
+    <span class="spanGroup6">03</span>
+    <p class="pGroup6">março</p>
+  </div>
+  <div class="group8">
+<div class="group7">
+<span class="span1Group7">No período da - </span>
+<span class="span2Group7">Manhã</span>
+
+<div class="groupHorarios">
+<div>
+  <div class="horasGroup9">
+    <span class="spanGroup9">10 as 15:00</span>
+  </div>
+</div>
+<div>
+  <div class="horasGroup9">
+    <span class="spanGroup9">10 as 15:00</span>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+    </div>
+<!--////////////////////////////////////////////////////////-->
+
+<div class="group10">
+<p class="spanGroup10">Nome do consultório - sala 01</p>
+<h2 class="h2Group10">Comodidades da sala incluídas</h2>
+<div class="groupIcones">
+<div class="group11">
+  <img src="../../../../assets/iconOk.png" alt="ok">
+  <span class="spanGroup11">Sofá/Divã</span>
+</div>
+<div class="group11">
+  <img src="../../../../assets/iconOk.png" alt="ok">
+  <span class="spanGroup11">Lavatório/Pia</span>
+</div>
+<div class="group11">
+  <img src="../../../../assets/iconOk.png" alt="ok">
+  <span class="spanGroup11">Impressora</span>
+  </div>
+</div>
+</div>
+
+
+<div *ngIf="showMe" class="group12">
+  <div class="divgroup12">
+    <p class="p1Group12">Valor total:</p>
+  <p class="p2Group12">R$ 80</p>
+  <span class="spanGroup12">/h</span>
+  </div>
+<p class="pGroup12">Nome do consultório - Sala 01</p>
+<p class="p3Group12">Comodidades da sala incluídas</p>
+<div class="divGroup23">
+<div class="group13">
+  <img class="imgGroup13" src="../../../../assets/iconOk.png" alt="ok">
+  <span class="spanGroup13">Sofá/Divã</span>
+  </div>
+  <div class="group13">
+    <img class="imgGroup13" src="../../../../assets/iconOk.png" alt="ok">
+    <span class="spanGroup13">Lavatório/Pia</span>
+    </div>
+    <div class="group13">
+      <img class="imgGroup13" src="../../../../assets/iconOk.png" alt="ok">
+      <span class="spanGroup13">Impressora</span>
+      </div>
+
+    </div>
+  <div class="group14">
+<img src="../../../../assets/iconfinder_clock_226587.svg" alt="data escolhida">
+<span class="spanGroup14">Data e horário escolhido</span>
+<p class="pGroup14">02 de março, 11:00 as 12:00</p>
+  </div>
+<button class="finalizar"><span>Finalizar reserva</span></button>
+</div>
+</div>
+
