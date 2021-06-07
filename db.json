@@ -1,0 +1,70 @@
+{
+  "room": [
+    {
+      "id": 1,
+      "date": "2021-05-01",
+      "nome": "sala 1",
+      "local": "Bela Vista,SP",
+      "preco": 80,
+      "imagem": "../../../assets/Retângulo1.png",
+      "periodo": "Manha",
+      "comodidades": "Sofa/Divã"
+    },
+    {
+      "id": 2,
+      "date": "2021-06-03",
+      "nome": "sala 1",
+      "local": "Bela Vista,SP",
+      "preco": 80,
+      "imagem": "../../../assets/Retângulo1.png",
+      "periodo": "Tarde",
+      "comodidades": "Sofa/Divã"
+    },
+    {
+      "id": 3,
+      "date": "2021-05-01",
+      "nome": "sala 2",
+      "local": "Morumbi,SP",
+      "preco": 180,
+      "imagem": "../../../assets/Retângulo2.png",
+      "periodo": "Manha",
+      "comodidades": "Sofa/Divã"
+    },
+    {
+      "id": 4,
+      "date": "2021-06-03",
+      "nome": "sala 2",
+      "local": "Morumbi,SP",
+      "preco": 180,
+      "imagem": "../../../assets/Retângulo2.png",
+      "periodo": "Tarde",
+      "comodidades": "Sofa/Divã"
+    },
+    {
+      "id": 5,
+      "date": "2021-06-03",
+      "nome": "sala 3",
+      "local": "Morumbi,SP",
+      "preco": 180,
+      "imagem": "../../../assets/Retângulo2.png",
+      "periodo": "Tarde",
+      "comodidades": "Sofa/Divã"
+    }
+  ],
+  "auth": [
+    {
+      "id": "1",
+      "email": "leandro@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "email": "maria@clina.com",
+      "password": "1234"
+    }
+
+  ],
+  "schedule": {
+    "roomId": 1
+  }
+}

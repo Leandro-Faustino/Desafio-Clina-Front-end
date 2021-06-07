@@ -1,6 +1,10 @@
+import { Router } from '@angular/router';
 import { LoginService } from './../services/login.service';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
+
+
 
 @Component({
   selector: 'app-tela-login',
@@ -10,18 +14,43 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class TelaLoginComponent implements OnInit {
 
 formulario=new FormGroup({
-  email: new FormControl(''),
-  password : new FormControl('')
+  email: new FormControl('',Validators.required),
+  password : new FormControl('',Validators.required)
 });
 
-  constructor(private service:LoginService ) { }
+usuario={
+  email:'',
+  password: ''
+}
+loginOk;
+  constructor(private Loginservice:LoginService,
+              private routes: Router
+    ) { }
 
   ngOnInit() {
   }
-value= this.formulario.get('email');
 
-public login(value) {
-  this.service.login(value);
-}
 
-}
+
+public login() {
+   this.Loginservice.login(this.usuario).subscribe(data => {
+data.map(data =>{
+  if(data.email === this.usuario.email && data.password === this.usuario.password){
+    this.routes.navigate(['/salas'])
+  }else {
+    return;
+
+  }
+})
+
+   })
+    }
+ }
+
+
+
+
+
+
+
+

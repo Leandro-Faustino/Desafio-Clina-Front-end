@@ -5,48 +5,46 @@
 <svg class="pino" xmlns="http://www.w3.org/2000/svg" width="13.257" height="16" viewBox="0 0 13.257 16"><defs><style>.a{fill:#7a35ff;fill-rule:evenodd;}</style></defs><g transform="translate(-4.5 -1.5)"><path class="a" d="M18.3,12.354a2.946,2.946,0,1,1-2.946-2.946A2.946,2.946,0,0,1,18.3,12.354Zm-1.473,0a1.473,1.473,0,1,1-1.473-1.473,1.473,1.473,0,0,1,1.473,1.473Z" transform="translate(-4.025 -4.025)"/><path class="a" d="M6.558,12.929a6.629,6.629,0,1,1,9.371-.23l-4.571,4.8-4.8-4.571Zm8.3-1.246-3.555,3.734L7.574,11.863a5.156,5.156,0,1,1,7.289-.179Z" transform="translate(0 0)"/></g></svg>
 <span class="localizacao">Todas as nossas salas estão localizadas em São Paulo-Bela Vista,
   rua Itaquera, 490 Sala 68- CEP:01332-000 </span>
-<div class="groupInput">
+<form class="groupInput" [formGroup]="formulario">
 <div class="group1">
 <p class="paragrafo1">Precisa para quais dias?</p>
-<Input class="input1 "  type="date" />
+
+<mat-form-field class="input1" appearance="bunce">
+  <mat-label>De 02 de mar. a 05 de mar.</mat-label>
+  <input  matInput
+          readonly
+          [matDatepicker]="dp3"
+           name="dias"
+          formControlName="dias"
+          (click)="dp3.open()">
+  <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+  <mat-datepicker #dp3></mat-datepicker>
+</mat-form-field>
 </div>
 <div class="group2">
 <p class="p2">Período do dia</p>
-<select class="input2" name="select">
-  <option value="valor1">Todos</option>
-  <option value="valor2" selected>Manhã</option>
-  <option value="valor3">Tarde</option>
-  <option value="valor4">noite</option>
+<select class="input2"  formControlName="periodo" readonly name="select">
+  <option value="Todos">Todos</option>
+  <option value="Manha" selected>Manhã</option>
+  <option value="Tarde">Tarde</option>
+  <option value="Noite">noite</option>
 </select>
 </div>
-</div>
+</form>
 <div class="group3">
-  <p class="p3">Encontramos 30 salas disponíveis</p>
+  <p class="p3">Encontramos {{response.length}} salas disponíveis</p>
 
-  <div class="card">
-<img class="imgSala" src="../../../../assets/Retângulo 2692.png" alt="Consultórios">
-<div class="group4">
-<h2 class="h-group4">Nome do consultório - Sala 01</h2>
-<span class="spangroup4">Em Bela Vista, SP.</span>
-</div>
-<div class="group5">
-<p class="spanGroup5">A partir de</p>
-<span class="p-group5">R$ 80</span><span class="span2group5">/h</span>
-</div>
-<button class="reserva" mat-raised-button color="primary">Accent</button>
-  </div>
-
-  <div class="card">
-    <img class="imgSala" src="../../../../assets/Retângulo 2692.png" alt="Consultórios">
+  <div class="card" *ngFor="let result of response">
+    <img class="imgSala" src={{result.imagem}} alt="Consultórios">
     <div class="group4">
-    <h2 class="h-group4">Nome do consultório - Sala 01</h2>
-    <span class="spangroup4">Em Bela Vista, SP.</span>
+    <h2 class="h-group4">Nome do consultório - {{ result.nome }}</h2>
+    <span class="spangroup4">Em {{result.local}}.</span>
     </div>
     <div class="group5">
     <p class="spanGroup5">A partir de</p>
-    <span class="p-group5">R$ 80</span><span class="span2group5">/h</span>
+    <span class="p-group5">R$ {{result.preco}}</span><span class="span2group5">/h</span>
     </div>
-    <button class="reserva" mat-raised-button color="primary">Accent</button>
+    <button class="reserva" mat-raised-button color="primary">Reserva</button>
       </div>
 
 </div>

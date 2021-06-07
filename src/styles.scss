@@ -37,10 +37,23 @@ app-root{
   height: 100%;
   background: #FAFAFA 0% 0% no-repeat padding-box;
   opacity: 1;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
+html {
+  @media(max-width: 1080px) {
+    font-size: 93.75%;
+  }
 
+  @media(max-width: 780px) {
+    font-size: 87.5%;
+  }
 
-
+  @media(max-width: 710px) {
+    font-size: 77.5%;
+  }
+  @media(max-width: 520px) {
+    font-size: 65.5%;
+  }
+}
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

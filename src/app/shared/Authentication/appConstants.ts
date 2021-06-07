@@ -10,8 +10,6 @@ return "http://localhost:3000/"
     }
       }
 
-public static get baseUrl(): string {
-  return this.baseServidor + "usuario"
-}
+
 
 }

@@ -17,8 +17,25 @@ $ cd Desafio-Clina-Front-end
 > Instale as dependências do projeto:
 $ npm install
 
+> Rode o json-server para subir os dados:
+$ yarn json
+
 > Rode o Projeto:
 $ ng serve 
+
+> Para fazer login com usuarios cadastrados:
+$  email": "leandro@gmail.com
+   password": 12345
+    
+$  email": maria@clina.com
+   password": 1234
+
+> Pesquisar por sala:
+$ data: 2021-06-03
+  periodo: Tarde
+
+$ data: 2021-05-01
+  periodo: Manha
 
 > Acesse porta http://localhost:4200 no browser para acessar o projeto
 
