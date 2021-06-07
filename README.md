@@ -1,4 +1,4 @@
-b# Desafio Clina
+# Desafio Clina 
 Este dasafio consiste em desenvolver uma aplicação que irá auxiliar no proceeso de reservas de salas comerciais.
 
 # Projeto em desenvolvimento...
@@ -24,11 +24,11 @@ $ yarn json </br>
 $ ng serve  </br>
 
 > Para fazer login com usuarios cadastrados: </br>
-$  email": "leandro@gmail.com </br>
-   password": 12345 </br>
+$ email": "leandro@gmail.com </br>
+  password": 12345 </br>
     
-$  email": maria@clina.com </br>
-   password": 1234   </br>
+$ email": maria@clina.com </br>
+  password": 1234   </br>
 
 > Pesquisar por sala: </br>
 $ data: 2021-06-03 </br>
