@@ -21,7 +21,7 @@ formulario= new FormGroup({
   periodo: new FormControl('')
 })
 dataCerta
-response
+response:any=[]
 constructor(private dataServices:DatasService ){}
 
 ngOnInit() {
@@ -41,9 +41,11 @@ if(dataCorreta  && periodo) {
    return of()
  })
 }
-
-
 })
+}
+
+detalhesSala(id) {
+  console.log(id)
 }
 }
 

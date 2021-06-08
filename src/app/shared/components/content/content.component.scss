@@ -38,12 +38,14 @@ opacity: 1;
 }
 
 .groupInput{
+  width: 431px;
   display:flex;
   flex-direction: row;
   margin-top: 20px;
+  height: 75px;
 }
 .group1 {
-  width: 21.39%;
+  width: 249px;
   height: 75px;
   opacity: 1;
   margin-right: 24px;
@@ -108,7 +110,7 @@ opacity: 1;
 }
 .p3 {
   width: 65.80%;
-height: 23px;
+  height: 23px;
 text-align: left;
 font: normal normal normal 16px/28px Poppins;
 letter-spacing: 0px;

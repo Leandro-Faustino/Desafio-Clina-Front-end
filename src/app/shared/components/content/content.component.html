@@ -7,6 +7,7 @@
   rua Itaquera, 490 Sala 68- CEP:01332-000 </span>
 <form class="groupInput" [formGroup]="formulario">
 <div class="group1">
+
 <p class="paragrafo1">Precisa para quais dias?</p>
 
 <mat-form-field class="input1" appearance="bunce">
@@ -29,12 +30,13 @@
   <option value="Tarde">Tarde</option>
   <option value="Noite">noite</option>
 </select>
+
 </div>
 </form>
 <div class="group3">
   <p class="p3">Encontramos {{response.length}} salas disponíveis</p>
 
-  <div class="card" *ngFor="let result of response">
+  <div class="card"  *ngFor="let result of response">
     <img class="imgSala" src={{result.imagem}} alt="Consultórios">
     <div class="group4">
     <h2 class="h-group4">Nome do consultório - {{ result.nome }}</h2>
@@ -44,7 +46,7 @@
     <p class="spanGroup5">A partir de</p>
     <span class="p-group5">R$ {{result.preco}}</span><span class="span2group5">/h</span>
     </div>
-    <button class="reserva" mat-raised-button color="primary">Reserva</button>
+    <button class="reserva" routerLink="/horarios" (click)="detalhesSala()" mat-raised-button color="primary">Reserva</button>
       </div>
 
 </div>
