@@ -5,6 +5,8 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { Observable, of } from 'rxjs';
 import { format } from 'date-fns';
+import { Router } from '@angular/router';
+import { EventEmitter } from '@angular/core';
 
 
 
@@ -18,20 +20,23 @@ import { format } from 'date-fns';
 export class ContentComponent implements OnInit {
 formulario= new FormGroup({
   dias: new FormControl(''),
-  periodo: new FormControl('')
 })
-dataCerta
+
 response:any=[]
-constructor(private dataServices:DatasService ){}
+detalhes:any=[]
+
+constructor(private dataServices:DatasService,
+            private router:Router
+  ){}
 
 ngOnInit() {
 
 this.formulario.valueChanges.subscribe(data => {
-  this.dataCerta= data
-    let {dias,periodo}= this.dataCerta
+let {dias}= data
 let dataCorreta =format(new Date(dias), 'yyyy-MM-dd')
-if(dataCorreta  && periodo) {
-  this.dataServices.buscarSalas(periodo,dataCorreta).subscribe(data =>{
+
+if(dataCorreta) {
+  this.dataServices.buscarSalas(dataCorreta).subscribe(data =>{
     this.response=data
 
   })
@@ -45,7 +50,9 @@ if(dataCorreta  && periodo) {
 }
 
 detalhesSala(id) {
-  console.log(id)
+  this.dataServices.detalheSalas(id)
+
+
 }
 }
 

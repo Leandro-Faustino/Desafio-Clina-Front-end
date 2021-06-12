@@ -15,6 +15,7 @@ import { HorariosComponent } from './horarios/horarios.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DATE_LOCALE } from '@angular/material';
+import { ObjToArrayPipe } from './objToArray.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MAT_DATE_LOCALE } from '@angular/material';
     FooterComponent,
     SalasDisponiveisComponent,
     HorariosComponent,
+    ObjToArrayPipe
   ],
   imports: [
     BrowserModule,

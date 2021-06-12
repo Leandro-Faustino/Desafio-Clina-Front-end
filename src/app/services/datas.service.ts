@@ -1,15 +1,41 @@
 import { AppConstants } from './../shared/Authentication/appConstants';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class DatasService {
   constructor(private http: HttpClient) { }
-buscarSalas(periodo,dataCorreta){
- let url=`${AppConstants.baseServidor}room?date=${dataCorreta}&periodo=${periodo}`
+ static receberId = new EventEmitter()
+detalhes
+idHorarios
+buscarSalas(dataCorreta){
+ let url=`${AppConstants.baseServidor}room?date=${dataCorreta}`
 return this.http.get(url)
+  }
+
+  detalheSalas(id){
+this.http.get(`${AppConstants.baseServidor}room?id=${id}`).subscribe(data =>
+  {
+    DatasService.receberId.emit(data)
+    this.detalhes=data
+    ;
+
+  })
+  }
+  buscarHorarios(dataCorreta){
+this.detalhes;
+this.detalhes.map(data => {
+ this.idHorarios= data.id;
+
+})
+console.log(this.idHorarios);
+
+let url= `${AppConstants.baseServidor}room/?date=${dataCorreta}&id=${this.idHorarios}`
+   return this.http.get(url)
+
   }
 
 }
